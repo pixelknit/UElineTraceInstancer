@@ -54,7 +54,7 @@ void ARockScatterManager::ScatterRocks()
             float RandomScale = FMath::FRandRange(MinScale, MaxScale);
 
             FRotator RandomRotation = FRotator(0.0f, FMath::FRandRange(0.0f, 360.0f), 0.0f);
-
+            // For now this is hard coded for my 2 specific rocks to instance: Rock01Mesh and Rock02Mesh
             UStaticMesh* SelectedMesh = FMath::RandBool() ? Rock01Mesh : Rock02Mesh;
             if (SelectedMesh)
             {
