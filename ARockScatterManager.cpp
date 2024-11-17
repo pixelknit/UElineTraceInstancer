@@ -63,7 +63,7 @@ void ARockScatterManager::ScatterRocks()
                 {
                     RockActor->GetStaticMeshComponent()->SetStaticMesh(SelectedMesh);
                     RockActor->GetStaticMeshComponent()->SetWorldScale3D(FVector(RandomScale));
-                    SpawnedRocks.Add(RockActor); // Track spawned rock
+                    SpawnedRocks.Add(RockActor); 
                 }
             }
         }
